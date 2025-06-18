@@ -1,0 +1,16 @@
+.contacto-container {
+  padding: 2rem;
+}
+
+.mapas-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.mapa {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
