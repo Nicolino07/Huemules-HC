@@ -47,9 +47,8 @@
 }
 
 .hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
+  position: relative;
+  z-index: 20;
 }
 
 /* Responsive para celulares */
