@@ -5,7 +5,7 @@ function Historia() {
 
     <div className="hero">
       <h1>Historia</h1>
-      <p>Texto...</p>
+      <p>Agregar historia y demas cosas...</p>
     </div>
 
   );

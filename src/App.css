@@ -76,6 +76,22 @@
   font-weight: 500;
 }
 
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.nav-links a:hover {
+  color: #ffcc00; /* o cualquier color llamativo */
+  transform: scale(1.1); /* se agranda levemente */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
 .instagram-icon {
   width: 32px;
   height: 32px;
