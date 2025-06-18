@@ -3,7 +3,7 @@ import "./Contacto.css";
 
 export default function Contacto() {
   return (
-    <div className="hero">
+    <div className="contacto-container">
       <h1>Vení a jugar con nosotros!!</h1>
       <h2>Menores</h2>
       <p>Jueves 20 a 21 hs - Viernes 18:30 a 19:30 hs</p>
@@ -11,6 +11,8 @@ export default function Contacto() {
 
     
       <h2>Mayores</h2>
+      <p>Lunes 22 a 23 hs</p>
+      <p>New Lawn - Alemania 274</p>
       <p>Jueves 21 a 22:30 hs</p>  
       <p>Gimnasio Cem 99 - Rolando 1601</p>
       <p>Primera damas, caballeros y jugadores federados. Consultanos!!</p>

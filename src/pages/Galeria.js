@@ -11,7 +11,7 @@ export default function Galeria() {
 
   return (
     <div className="galeria-container">
-      <h1>Galería</h1>
+      <h1>Huemules en fotos</h1>
       <div className="galeria-grid">
         {galeriaImages.map((imagen, i) => (
           <div key={imagen.id} className="galeria-item" onClick={() => setIndex(i)}>
