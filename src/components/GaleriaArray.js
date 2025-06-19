@@ -70,7 +70,7 @@ const galeriaImages = [
   { id: 52, src: require("../images/Galeria/img_79.jpg")},
   { id: 52, src: require("../images/Galeria/img_80.jpg")},
   { id: 52, src: require("../images/Galeria/img_81.jpg")},
-  { id: 52, src: require("../images/Galeria/img_82.jpg")},
+  
   { id: 52, src: require("../images/Galeria/img_83.jpg")},
   { id: 52, src: require("../images/Galeria/img_84.jpg")},
   { id: 52, src: require("../images/Galeria/img_85.jpg")},
