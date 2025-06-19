@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2bca92a6.css",
-    "main.js": "/static/js/main.3f8c44b9.js",
+    "main.js": "/static/js/main.0338fc9a.js",
     "static/js/453.1078298f.chunk.js": "/static/js/453.1078298f.chunk.js",
     "static/media/Bandera Huemules.PNG": "/static/media/Bandera Huemules.7d768b2c1bdea5a5032a.PNG",
     "static/media/img_41.jpg": "/static/media/img_41.3a60fc96d1bebbeab18a.jpg",
@@ -21,7 +21,6 @@
     "static/media/img_48.jpg": "/static/media/img_48.225a990a4da19de92e60.jpg",
     "static/media/img_49.jpg": "/static/media/img_49.7853a72b69f3e874f5f5.jpg",
     "static/media/img_47.jpg": "/static/media/img_47.882b90e111f8c5f7f2d8.jpg",
-    "static/media/img_82.jpg": "/static/media/img_82.b2f44e4e1cb3e2f5f4e5.jpg",
     "static/media/img_45.jpg": "/static/media/img_45.63664b71a72f1bbb2626.jpg",
     "static/media/img_71.jpg": "/static/media/img_71.49209080e4d034735181.jpg",
     "static/media/img_77.jpg": "/static/media/img_77.a0bc3ad6562eaea4611c.jpg",
@@ -86,11 +85,11 @@
     "static/media/instagram.svg": "/static/media/instagram.77f6713f879d105f4ff73405047e0492.svg",
     "index.html": "/index.html",
     "main.2bca92a6.css.map": "/static/css/main.2bca92a6.css.map",
-    "main.3f8c44b9.js.map": "/static/js/main.3f8c44b9.js.map",
+    "main.0338fc9a.js.map": "/static/js/main.0338fc9a.js.map",
     "453.1078298f.chunk.js.map": "/static/js/453.1078298f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2bca92a6.css",
-    "static/js/main.3f8c44b9.js"
+    "static/js/main.0338fc9a.js"
   ]
 }
