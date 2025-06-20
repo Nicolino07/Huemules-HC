@@ -5,6 +5,7 @@ import Historia from "./pages/Historia";
 import Galeria from "./pages/Galeria";
 import Contacto from "./pages/Contacto";
 import Navbar from "./components/NavBar";
+import Calendario from "./pages/Calendario";
 import Footer from "./components/Footer"; // importamos el footer
 
 import "./App.css";
@@ -37,6 +38,7 @@ export default function App() {
         />
         <Route path="/historia" element={<Historia />} />
         <Route path="/galeria" element={<Galeria />} />
+        <Route path="/Calendario" element={<Calendario/>}/>
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
 

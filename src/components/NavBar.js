@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/Fondos/logo.png";
 import instagramIcon from "../images/Fondos/instagram.svg";
 import "./NavBar.css"; // vamos a separar el CSS de la navbar
+import Calendario from "../pages/Calendario";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,9 @@ export default function Navbar() {
           <Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link>
           <Link to="/historia" onClick={() => setMenuOpen(false)}>Historia</Link>
           <Link to="/galeria" onClick={() => setMenuOpen(false)}>Galería</Link>
+          <Link to="/calendario" on onClick={()=> setMenuOpen(false)}>Calendario</Link>
           <Link to="/contacto" onClick={() => setMenuOpen(false)}>Contacto</Link>
+          
         </div>
       </div>
 
