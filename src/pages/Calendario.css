@@ -3,3 +3,21 @@
     text-align: center;
     color: blanchedalmond;
 }
+
+.calendario-container h1 {
+    color: #009dd4;
+    text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+}
+
+.calendario-container h2 {
+    color: #af5b75;
+    text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+}

@@ -4,8 +4,8 @@ import "./Calendario.css";
 export default function Calendario() {
   return (
     <div className='calendario-container'>
-        <h1>Proximas fechas</h1>
-        <h2>Caballeros</h2>
+        <h1>Próximas fechas</h1> 
+        <h2 className="h2">Caballeros</h2>
         <h3>Viernes 20</h3>
         <p>Huemules vs Wiliches</p>
         <p>19 hs</p>
