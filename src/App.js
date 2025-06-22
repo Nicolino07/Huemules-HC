@@ -31,8 +31,19 @@ export default function App() {
                 <div className="foto-club">
                   <img src={portada} alt="Portada" className="portada-img" />
                 </div>
-                <p>Algo mas..</p>
+            
               </section>
+
+
+              <section className="reels">
+                <h2>Últimas novedades</h2>
+                <div className="reel-container">
+                  <video src="/Videos/reel_1.mp4" controls muted autoPlay loop />
+                  <video src="/Videos/reel_2.mp4" controls muted autoPlay loop />
+                </div>
+              </section>
+
+
             </main>
           }
         />

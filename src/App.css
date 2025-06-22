@@ -113,14 +113,16 @@
 .content {
   position: relative;
   z-index: 5;
-  margin-top: 40px;
   padding: 20px;
   color: white;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-family: "Petemoss", cursive;
+  font-size: 8rem;
+  font-style: normal;
+
 }
 
 
@@ -135,4 +137,30 @@
 
 .hero a:hover {
   text-decoration: underline; /* opcional: subrayado al pasar el mouse */
+}
+/*Seccion de para los dos reels de novedades*/
+
+.reels {
+  text-align: center;
+  padding: 2rem 1rem;
+  
+}
+
+.reels h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.reel-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /*Separacion entre reels*/
+  flex-wrap: wrap;
+}
+
+.reel-container video {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
