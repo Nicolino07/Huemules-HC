@@ -39,8 +39,6 @@
 .foto-club {
   position: relative;
   z-index: 1;
-  height: 100vh;
-  align-items: flex-start; /* sube la imagen */
   display: flex;
   justify-content: center;
 }
@@ -84,7 +82,7 @@
   transition: all 0.3s ease;
 }
 
-/* Efecto al pasar el mouse */
+/* Efecto al pasar el mouse sobre botones*/
 .nav-links a:hover {
   color: #ffcc00; /* o cualquier color llamativo */
   transform: scale(1.1); /* se agranda levemente */
@@ -120,7 +118,7 @@
 
 .hero h1 {
   font-family: "Petemoss", cursive;
-  font-size: 8rem;
+  font-size: 7rem;
   font-style: normal;
 
 }
@@ -138,6 +136,8 @@
 .hero a:hover {
   text-decoration: underline; /* opcional: subrayado al pasar el mouse */
 }
+
+
 /*Seccion de para los dos reels de novedades*/
 
 .reels {
@@ -147,7 +147,7 @@
 }
 
 .reels h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
