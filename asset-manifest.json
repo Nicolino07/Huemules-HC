@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cca152cb.css",
-    "main.js": "/static/js/main.4a1165e7.js",
+    "main.css": "/static/css/main.2ddd9a8d.css",
+    "main.js": "/static/js/main.7df1ac9d.js",
     "static/js/453.1078298f.chunk.js": "/static/js/453.1078298f.chunk.js",
     "static/media/Bandera Huemules.PNG": "/static/media/Bandera Huemules.7d768b2c1bdea5a5032a.PNG",
     "static/media/img_41.jpg": "/static/media/img_41.3a60fc96d1bebbeab18a.jpg",
@@ -84,12 +84,12 @@
     "static/media/img_29.jpg": "/static/media/img_29.03f613d3107b08f229d0.jpg",
     "static/media/instagram.svg": "/static/media/instagram.882b3ae83fce1c779aacc3ab3da244f6.svg",
     "index.html": "/index.html",
-    "main.cca152cb.css.map": "/static/css/main.cca152cb.css.map",
-    "main.4a1165e7.js.map": "/static/js/main.4a1165e7.js.map",
+    "main.2ddd9a8d.css.map": "/static/css/main.2ddd9a8d.css.map",
+    "main.7df1ac9d.js.map": "/static/js/main.7df1ac9d.js.map",
     "453.1078298f.chunk.js.map": "/static/js/453.1078298f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cca152cb.css",
-    "static/js/main.4a1165e7.js"
+    "static/css/main.2ddd9a8d.css",
+    "static/js/main.7df1ac9d.js"
   ]
 }
