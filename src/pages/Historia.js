@@ -36,6 +36,8 @@ function Historia() {
         Hoy somos una gran familia que sigue avanzando con pasión y compromiso. Actualmente 
         entrenamos en el Gimnasio New Lawn y en el gimnasio de la Escuela Secundaria N.º 99.
       </p>
+      <p>Actualmente competimos en el torneo oficial de la Asociación de Hockey de Bariloche 
+        y Lagos del Sur, en las categorias damas, caballeros e inferiores.</p>
       <h2>¡Vení y sumate a aprender, jugar y competir con nosotros!</h2>
     </div>
 
