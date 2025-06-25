@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/Fondos/logo.png";
 import instagramIcon from "../images/Fondos/instagram.svg";
 import "./NavBar.css"; // vamos a separar el CSS de la navbar
-import Calendario from "../pages/Calendario";
+
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

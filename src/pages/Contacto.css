@@ -16,3 +16,14 @@
   flex: 1 1 300px;
   max-width: 400px;
 }
+
+a {
+  color: blanchedalmond;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff6600; /* color cuando pasás el mouse */
+  text-decoration: underline;
+}

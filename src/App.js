@@ -43,7 +43,8 @@ export default function App() {
                 </div>
               </section>
 
-
+              <h2>CONSULTANOS!!</h2>
+              <p>Teléfono: 294 467-7439 </p>
             </main>
           }
         />

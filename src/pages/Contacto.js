@@ -18,8 +18,17 @@ export default function Contacto() {
       <p>Primera damas, caballeros y jugadores federados. Consultanos!!</p>
       <h3>Teléfono: 294 467-7439 </h3>
 
-      <h3>Mail: algooo@gmail.com - Seguinos{" "}
-        <a href="https://www.instagram.com/huemuleshcbariloche/" target="_blank" rel="noopener noreferrer">
+      <h3>
+        Mail:{" "}
+        <a>
+          Huemuleshockeyclub@gmail.com
+        </a>{" "}
+        - Seguinos{" "}
+        <a
+          href="https://www.instagram.com/huemuleshcbariloche/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           en Instagram
         </a>
       </h3>
