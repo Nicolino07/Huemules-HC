@@ -1,0 +1,32 @@
+.historia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.historia-container p {
+  font-weight: 500;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.historia-container h1 {
+  font-family: "Petemoss", cursive;
+  font-size: 7rem;
+  font-style: normal;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.historia-container h2 {
+  color: whitesmoke;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
