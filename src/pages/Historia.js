@@ -4,8 +4,8 @@ function Historia() {
   return (
 
     <div className="hero">
-      <h1>Historia</h1>
-      <p>Agregar historia y demas cosas...</p>
+      <h1>Quiénes somos</h1>
+      <p>Página en construcción</p>
     </div>
 
   );

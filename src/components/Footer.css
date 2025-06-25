@@ -13,6 +13,12 @@
   z-index: 5;
 }
 
+.footer-link {
+  color: #e1306c; 
+  font-weight: bold;
+  text-decoration: none;
+}
 .footer-link:hover {
   color: #ffcc00; /* color al pasar el mouse */
+  text-decoration: underline;
 }
