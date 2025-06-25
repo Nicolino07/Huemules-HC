@@ -17,13 +17,14 @@
   max-width: 400px;
 }
 
-a {
-  color: blanchedalmond;
+.instagram-link {
+  color: #e1306c; /* color de Instagram */
   text-decoration: none;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
-a:hover {
-  color: #ff6600; /* color cuando pasás el mouse */
+.instagram-link:hover {
+  color: #ff66a5;
   text-decoration: underline;
 }
