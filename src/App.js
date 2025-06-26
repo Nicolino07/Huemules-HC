@@ -35,7 +35,7 @@ export default function App() {
 
               <section class="novedades">
 
-                <h2>Últimas novedades</h2>
+                <h2>¡Últimas novedades!</h2>
                 <h3>Se termina el campeonato</h3>
                 <p>
                   El último fin de semana de junio finaliza el Torneo Apertura.  
@@ -48,7 +48,7 @@ export default function App() {
                   <video src="/Videos/reel_2.mp4" controls muted autoPlay loop />
                 </div>
                 
-                <h2>CONSULTANOS!!</h2>
+                <h3>CONSULTANOS!!</h3>
                 <p>Teléfono: 294 467-7439 </p>
 
               </section>
