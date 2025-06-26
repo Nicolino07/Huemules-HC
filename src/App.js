@@ -33,16 +33,29 @@ export default function App() {
                 </div>
               </section>
 
-              <section className="reels">
+              <section class="novedades">
+
                 <h2>Últimas novedades</h2>
+                <h3>Se termina el campeonato</h3>
+                <p>
+                  El último fin de semana de junio finaliza el Torneo Apertura.  
+                  ¡Vení a alentarnos! Consultá las fechas en nuestro <a href="#calendario">calendario</a>.
+                </p>
+
+                
                 <div className="reel-container">
                   <video src="/Videos/reel_1.mp4" controls muted autoPlay loop />
                   <video src="/Videos/reel_2.mp4" controls muted autoPlay loop />
                 </div>
+                
+                <h2>CONSULTANOS!!</h2>
+                <p>Teléfono: 294 467-7439 </p>
+
               </section>
 
-              <h2>CONSULTANOS!!</h2>
-              <p>Teléfono: 294 467-7439 </p>
+             
+
+
             </main>
           }
         />
