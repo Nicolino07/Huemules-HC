@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.17377a5f.css",
-    "main.js": "/static/js/main.d2e7e06a.js",
+    "main.css": "/static/css/main.660fc3cd.css",
+    "main.js": "/static/js/main.a094ed46.js",
     "static/js/453.1078298f.chunk.js": "/static/js/453.1078298f.chunk.js",
     "static/media/Bandera Huemules.PNG": "/static/media/Bandera Huemules.7d768b2c1bdea5a5032a.PNG",
     "static/media/img_41.jpg": "/static/media/img_41.3a60fc96d1bebbeab18a.jpg",
@@ -49,6 +49,7 @@
     "static/media/img_75.jpg": "/static/media/img_75.2ab0147531d366ed56b8.jpg",
     "static/media/img_84.jpg": "/static/media/img_84.60e6d54165f2886da485.jpg",
     "static/media/img_83.jpg": "/static/media/img_83.c2ea5304782a47d46ca8.jpg",
+    "static/media/ULTIMAS_FECHAS.jpeg": "/static/media/ULTIMAS_FECHAS.7d8c05daf2ad2cf757c7.jpeg",
     "static/media/logo.png": "/static/media/logo.bf236a7b06075e0df28f.png",
     "static/media/img_08.jpg": "/static/media/img_08.cf11bba0aadb5be3ff22.jpg",
     "static/media/img_23.jpg": "/static/media/img_23.33b3dbbdb221ebb4ad1a.jpg",
@@ -84,12 +85,12 @@
     "static/media/img_29.jpg": "/static/media/img_29.03f613d3107b08f229d0.jpg",
     "static/media/instagram.svg": "/static/media/instagram.882b3ae83fce1c779aacc3ab3da244f6.svg",
     "index.html": "/index.html",
-    "main.17377a5f.css.map": "/static/css/main.17377a5f.css.map",
-    "main.d2e7e06a.js.map": "/static/js/main.d2e7e06a.js.map",
+    "main.660fc3cd.css.map": "/static/css/main.660fc3cd.css.map",
+    "main.a094ed46.js.map": "/static/js/main.a094ed46.js.map",
     "453.1078298f.chunk.js.map": "/static/js/453.1078298f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17377a5f.css",
-    "static/js/main.d2e7e06a.js"
+    "static/css/main.660fc3cd.css",
+    "static/js/main.a094ed46.js"
   ]
 }
