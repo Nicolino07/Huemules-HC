@@ -7,13 +7,13 @@ import Contacto from "./pages/Contacto";
 import Navbar from "./components/NavBar";
 import Calendario from "./pages/Calendario";
 import Footer from "./components/Footer";
+import Noticias from "./components/Noticias";
 
 import "./App.css";
 
 /*Importar fotos necesarias para la portada */
 import fondo from "./images/Fondos/Bandera Huemules.PNG";
 import portada from "./images/Galeria/img_01.jpg";
-import FechasImg from "./images/Novedades/ULTIMAS_FECHAS.jpeg";
 
 
 export default function App() {
@@ -40,22 +40,8 @@ export default function App() {
 
               <section class="novedades">
 
-                <hr className="divider" />
-
-                <h2>¡Últimas novedades!</h2>
-
-                <figure className="novedad-figure">
-                  <img src={FechasImg} alt="Últimas fechas" className="ultimas-fechas-img" />
-                  <figcaption className="epigrafe">Se termina el campeonato</figcaption>
-                </figure>
-
-                <p>
-                  El último fin de semana de junio finaliza el Torneo Apertura.  
-                  ¡Vení a alentarnos! Consultá las fechas en nuestro <a href="#calendario">calendario</a>.
-                </p>
-
-                <hr className="divider" />
-
+                <Noticias/>
+      
                 <div className="reel-container">
                   <video src="/Videos/reel_1.mp4" controls muted autoPlay loop />
                   <video src="/Videos/reel_2.mp4" controls muted autoPlay loop />
