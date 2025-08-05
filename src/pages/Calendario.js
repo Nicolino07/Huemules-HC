@@ -6,22 +6,27 @@ export default function Calendario() {
     <div className='calendario-container'>
         <h1>Próximas fechas</h1> 
 
-        <h2>Damas</h2>
-        <h3>Sabado 28/06</h3>
-        <p>Huemules A vs Wiliches B</p>
-        <p>14:00 hs</p>
-        <p>Huemules B vs Independiente</p>
-        <p>15:00 hs</p>
-        <h3>Gimnasio municipal N°3</h3>
-        <h2>Caballeros</h2>
-        <h3>Sabado 28/06</h3>
+       
+        <h2>Sabado 09 de Agosto</h2>
+        <h3>Damas</h3>
+        <p>Huemules B vs Patagon</p>
+        <p>10:00 hs</p>
+        <h3>Caballeros</h3>
         <p>Huemules vs Esc Municipal B</p>
-        <p>9:00 hs</p>
-        <p>Huemules vs Esc Municipal A</p>
-        <p>19:00 hs</p>
-        <h3>Gimnasio municipal N°3</h3>
+        <p>21:00 hs</p>
+        <h3>Polideportivo Dina Huapi</h3>
       
-        
+        <h2>Domingo 10 de Agosto</h2>
+
+        <h3>Damas</h3>
+        <p>Huemules A vs Pehuenes</p>
+        <p>09:30 hs</p>
+
+        <h3>Caballeros</h3>
+        <p>Huemules vs Lacar</p>
+        <p>12:30 hs</p>
+        <h3>Polideportivo Dina Huapi</h3>
+
     </div>
   );
 }
