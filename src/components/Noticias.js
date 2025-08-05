@@ -7,7 +7,7 @@ export default function Noticias() {
   const noticia = {
     id: 1,
     titulo: "Arranca el torneo",
-    fecha: "2023-08-05"
+    fecha: "08/05/2025"
   };
 
   return (
