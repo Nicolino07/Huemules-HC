@@ -1,23 +1,100 @@
-.calendario-container { 
-    margin-top: 120px;
-    text-align: center;
-    color: blanchedalmond;
+/* Calendario.css */
+
+.calendario-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 .calendario-container h1 {
-    color: #009dd4;
-    text-shadow: 
-        -1px -1px 0 #fff,  
-         1px -1px 0 #fff,
-        -1px  1px 0 #fff,
-         1px  1px 0 #fff;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
 }
 
 .calendario-container h2 {
-    color: #af5b75;
-    text-shadow: 
-        -1px -1px 0 #fff,  
-         1px -1px 0 #fff,
-        -1px  1px 0 #fff,
-         1px  1px 0 #fff;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 25px 0 15px;
+  font-size: 1.5rem;
+}
+
+.calendario-container h3 {
+  color: #2c3e50;
+  margin: 20px 0 10px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.calendario-container h3::before {
+  content: "•";
+  color: #3498db;
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+.calendario-container p {
+  margin: 8px 0;
+  padding-left: 25px;
+  font-size: 1.1rem;
+}
+
+/* Estilo para los horarios */
+.calendario-container p:nth-of-type(even) {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+
+/* Estilo para la ubicación */
+.calendario-container h3:last-of-type {
+  margin-top: 20px;
+  color: #16a085;
+  font-style: italic;
+}
+
+.calendario-container h3:last-of-type::before {
+  content: "📍";
+  font-size: 1rem;
+}
+
+/* Añade esto al CSS */
+.dia-partidos {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  border-left: 4px solid #3498db;
+}
+
+@media (max-width: 600px) {
+  .calendario-container {
+    padding: 10px;
+  }
+  
+  .calendario-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .calendario-container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .calendario-container h3 {
+    font-size: 1.1rem;
+  }
+  
+  .calendario-container p {
+    font-size: 1rem;
+  }
 }

@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaHockeyPuck, FaCalendarAlt, FaNewspaper } from "react-icons/fa";
 import "./Noticias.css";
+// Importa la imagen (ajusta la ruta según donde tengas tu imagen)
+import imagenTorneo from "/home/nicolas/Huemules-HC/src/images/Novedades/calendario_huemules.jpeg"; // o la ruta correcta
 
 export default function Noticias() {
   const noticia = {
     id: 1,
-    titulo: "Arranca el torneo",
-    fecha: "08/05/2025"
+    titulo: "Llego la hora",
+    fecha: "08/05/2025",
+    imagen: imagenTorneo, // Agrega la imagen al objeto noticia
+    altTexto: "Fechas del proximo fin de semana" // Texto alternativo para accesibilidad
   };
 
   return (
@@ -30,10 +33,17 @@ export default function Noticias() {
             })}
           </p>
         )}
+        {/* Agrega la imagen aquí */}
+        <div className="imagen-noticia">
+          <img 
+            src={noticia.imagen} 
+            alt={noticia.altTexto} 
+            className="noticia-imagen"
+          />
+        </div>
         <p>
           Este fin de semana 8 y 9 de agosto se juega la primer fecha del torneo 
-          clausura 2025 y Huemules dirá presente. Vení a alentarnos, consulta los horarios en nuestro{' '}
-          <Link to="/calendario" className="enlace-calendario">calendario</Link>
+          clausura 2025 y Huemules dirá presente. Vení a alentarnos.
         </p>
       </div>
     </section>

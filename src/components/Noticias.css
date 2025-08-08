@@ -88,15 +88,15 @@
   }
 }
 
-/* EStilo enlace*/
-.enlace-calendario {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease;
+
+.imagen-noticia {
+  margin: 15px 0;
+  text-align: center;
 }
 
-.enlace-calendario:hover {
-  color: #e74c3c;
-  text-decoration: underline;
+.noticia-imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

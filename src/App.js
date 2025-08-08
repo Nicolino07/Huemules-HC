@@ -41,6 +41,8 @@ export default function App() {
               <section class="novedades">
 
                 <Noticias/>
+
+                <h2>¡¡Seguimos creciendo, vení a probar!!</h2>
                 
                 <div className="reel-container">
                   <video src="/Videos/reel_1.mp4" controls muted autoPlay loop />
