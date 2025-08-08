@@ -7,7 +7,7 @@ import imagenTorneo from "/home/nicolas/Huemules-HC/src/images/Novedades/calenda
 export default function Noticias() {
   const noticia = {
     id: 1,
-    titulo: "Llego la hora",
+    titulo: "Llegó la hora!!!",
     fecha: "08/05/2025",
     imagen: imagenTorneo, // Agrega la imagen al objeto noticia
     altTexto: "Fechas del proximo fin de semana" // Texto alternativo para accesibilidad
