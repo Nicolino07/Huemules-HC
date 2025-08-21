@@ -7,25 +7,28 @@ export default function Calendario() {
       <h1>Próximas fechas</h1> 
 
       <div className="dia-partidos">
-        <h2>Sábado 09 de Agosto</h2>
+        <h2>Sábado 23 de Agosto</h2>
         <h3>Damas</h3>
-        <p>Huemules B vs Patagon</p>
-        <p>10:00 hs</p>
+        <p>Huemules B vs Bolson B</p>
+        <p>18:00 hs</p>
+        <h3 className="ubicacion">New Lawn</h3>
         <h3>Caballeros</h3>
-        <p>Huemules vs Esc Municipal B</p>
+        <p>Huemules vs Estudiantes</p>
+        <p>14:00 hs</p>
+        <p>Huemules vs Esc. Municipal A</p>
         <p>20:00 hs</p>
-        <h3>Polideportivo Dina Huapi</h3>
+        <h3 className="ubicacion">Polideportivo Dina Huapi</h3>
       </div>
 
       <div className="dia-partidos">
-        <h2>Domingo 10 de Agosto</h2>
-        <h3>Damas</h3>
-        <p>Huemules A vs Pehuenes</p>
-        <p>10:00 hs</p>
+        <h2>Domingo 24 de Agosto</h2>
         <h3>Caballeros</h3>
-        <p>Huemules vs Lacar</p>
-        <p>13:00 hs</p>
-        <h3>Polideportivo Dina Huapi</h3>
+        <p>Huemules vs Hualas</p>
+        <p>14:30 hs</p>
+        <h3>Damas</h3>
+        <p>Huemules A vs Lacar</p>
+        <p>15:30 hs</p>
+        <h3 className="ubicacion">Polideportivo Dina Huapi</h3>
       </div>
     </div>
   );

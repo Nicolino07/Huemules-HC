@@ -56,15 +56,12 @@
 }
 
 /* Estilo para la ubicación */
-.calendario-container h3:last-of-type {
-  margin-top: 20px;
-  color: #16a085;
-  font-style: italic;
-}
 
-.calendario-container h3:last-of-type::before {
+.calendario-container h3.ubicacion::before {
   content: "📍";
   font-size: 1rem;
+  margin-right: 8px;
+  color: #16a085;
 }
 
 /* Añade esto al CSS */

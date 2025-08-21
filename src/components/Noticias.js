@@ -2,14 +2,17 @@ import React from "react";
 import { FaHockeyPuck, FaCalendarAlt, FaNewspaper } from "react-icons/fa";
 import "./Noticias.css";
 // Importa la imagen (ajusta la ruta según donde tengas tu imagen)
-import imagenTorneo from "/home/nicolas/Huemules-HC/src/images/Novedades/calendario_huemules.jpeg"; // o la ruta correcta
+import imagenTorneo01 from "/home/nicolas/Huemules-HC/src/images/Novedades/calendario_01.jpeg"; // o la ruta correcta
+import imagenTorneo02 from "/home/nicolas/Huemules-HC/src/images/Novedades/calendario_02.jpeg";
+
 
 export default function Noticias() {
   const noticia = {
     id: 1,
-    titulo: "Llegó la hora!!!",
-    fecha: "08/05/2025",
-    imagen: imagenTorneo, // Agrega la imagen al objeto noticia
+    titulo: "Huemules vuelve a jugar",
+    fecha: "08/21/2025",
+    imagen01: imagenTorneo01, // Agrega la imagen al objeto noticia
+    imagen02: imagenTorneo02,
     altTexto: "Fechas del proximo fin de semana" // Texto alternativo para accesibilidad
   };
 
@@ -34,16 +37,20 @@ export default function Noticias() {
           </p>
         )}
         {/* Agrega la imagen aquí */}
-        <div className="imagen-noticia">
-          <img 
-            src={noticia.imagen} 
-            alt={noticia.altTexto} 
-            className="noticia-imagen"
-          />
-        </div>
+          <div className="imagen-noticia">
+            <img 
+              src={noticia.imagen02} 
+              alt={noticia.altTexto} 
+              className="noticia-imagen"
+            />
+            <img 
+              src={noticia.imagen01} 
+              alt={noticia.altTexto} 
+              className="noticia-imagen"
+            />
+          </div>
         <p>
-          Este fin de semana 8 y 9 de agosto se juega la primer fecha del torneo 
-          clausura 2025 y Huemules dirá presente. Vení a alentarnos.
+           ¡¡¡Te esperamos!!!
         </p>
       </div>
     </section>
