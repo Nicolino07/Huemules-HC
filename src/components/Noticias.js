@@ -1,19 +1,14 @@
 import React from "react";
-import { FaHockeyPuck, FaCalendarAlt, FaNewspaper } from "react-icons/fa";
+import { FaHockeyPuck, FaCalendarAlt, FaNewspaper, FaInstagram } from "react-icons/fa";
 import "./Noticias.css";
-// Importa la imagen (ajusta la ruta según donde tengas tu imagen)
-import imagenTorneo01 from "/home/nicolas/Huemules-HC/src/images/Novedades/calendario_01.jpeg"; // o la ruta correcta
-import imagenTorneo02 from "/home/nicolas/Huemules-HC/src/images/Novedades/calendario_02.jpeg";
-
+import imagenTorneo01 from "../images/Novedades/playoff"; 
 
 export default function Noticias() {
   const noticia = {
     id: 1,
     titulo: "Huemules vuelve a jugar",
-    fecha: "08/21/2025",
-    imagen01: imagenTorneo01, // Agrega la imagen al objeto noticia
-    imagen02: imagenTorneo02,
-    altTexto: "Fechas del proximo fin de semana" // Texto alternativo para accesibilidad
+    fecha: "12/06/2025",
+    imagen01: imagenTorneo01,
   };
 
   return (
@@ -36,21 +31,31 @@ export default function Noticias() {
             })}
           </p>
         )}
-        {/* Agrega la imagen aquí */}
-          <div className="imagen-noticia">
-            <img 
-              src={noticia.imagen02} 
-              alt={noticia.altTexto} 
-              className="noticia-imagen"
-            />
-            <img 
-              src={noticia.imagen01} 
-              alt={noticia.altTexto} 
-              className="noticia-imagen"
-            />
-          </div>
+        <div className="imagen-noticia">
+          <img 
+            src={noticia.imagen01} 
+            alt="Noticia Huemules Hockey Club"
+            className="noticia-imagen"
+          />
+        </div>
         <p>
-           ¡¡¡Te esperamos!!!
+          Luego de consagrarse subcampeonas del torneo clausura Damas B, el equipo femenino 'Huemules A' 
+          vuelve a participar de los play-off en busca del ascenso a primera división. 
+          El mismo se disputará en la ciudad de Esquel el día 8 de diciembre.
+        </p>
+        <p>
+          <FaInstagram /> Seguinos en vivo desde{" "}
+          <a 
+            href="https://www.instagram.com/huemuleshcbariloche/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="enlace-instagram"
+          >
+            nuestro Instagram
+          </a>
+        </p>
+        <p className="llamado-accion">
+          ¡¡¡Te esperamos!!!
         </p>
       </div>
     </section>
