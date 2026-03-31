@@ -38,7 +38,7 @@ export default function App() {
                 </figure>
               </section>
 
-              <section class="novedades">
+              <section className="novedades">
 
                 <Noticias/>
 

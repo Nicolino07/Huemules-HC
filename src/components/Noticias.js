@@ -1,15 +1,52 @@
-import React from "react";
-import { FaHockeyPuck, FaCalendarAlt, FaNewspaper, FaInstagram } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaHockeyPuck } from "react-icons/fa";
+import Papa from "papaparse";
 import "./Noticias.css";
-import imagenTorneo01 from "../images/Novedades/playoff"; 
+
+const SHEET_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vT5h-_3NWwKU5XqRyGUyj5773qHrbsFiepXXWxfQEgYj1canddVboREtdFF2oG2VBL3tOZ64jgmbEgE/pub?gid=0&output=csv";
+
+function parsearCSV(texto) {
+  const { data } = Papa.parse(texto, { header: true, skipEmptyLines: true });
+  return data
+    .map((fila) => ({
+      url: fila["url_post"]?.trim(),
+      titulo: fila["titulo"]?.trim(),
+    }))
+    .filter((n) => n.url);
+}
 
 export default function Noticias() {
-  const noticia = {
-    id: 1,
-    titulo: "Huemules vuelve a jugar",
-    fecha: "12/06/2025",
-    imagen01: imagenTorneo01,
-  };
+  const [noticias, setNoticias] = useState([]);
+  const [cargando, setCargando] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch(SHEET_URL)
+      .then((res) => res.text())
+      .then((texto) => {
+        setNoticias(parsearCSV(texto));
+        setCargando(false);
+      })
+      .catch(() => {
+        setError("No se pudieron cargar las novedades.");
+        setCargando(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    if (noticias.length === 0) return;
+    if (!document.getElementById("instagram-embed-script")) {
+      const script = document.createElement("script");
+      script.id = "instagram-embed-script";
+      script.src = "https://www.instagram.com/embed.js";
+      script.async = true;
+      script.onload = () => window.instgrm?.Embeds.process();
+      document.body.appendChild(script);
+    } else if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  }, [noticias]);
 
   return (
     <section className="novedades">
@@ -18,45 +55,21 @@ export default function Noticias() {
         <FaHockeyPuck className="icono-titulo" /> ¡Últimas novedades!
       </h2>
 
-      <div key={noticia.id} className="noticia">
-        <h3>
-          <FaNewspaper /> {noticia.titulo}
-        </h3>
-        {noticia.fecha && (
-          <p className="fecha">
-            <FaCalendarAlt /> Publicado: {new Date(noticia.fecha).toLocaleDateString('es-AR', {
-              day: 'numeric',
-              month: 'long',
-              year: 'numeric'
-            })}
-          </p>
-        )}
-        <div className="imagen-noticia">
-          <img 
-            src={noticia.imagen01} 
-            alt="Noticia Huemules Hockey Club"
-            className="noticia-imagen"
-          />
-        </div>
-        <p>
-          Luego de consagrarse subcampeonas del torneo clausura Damas B, el equipo femenino 'Huemules A' 
-          vuelve a participar de los play-off en busca del ascenso a primera división. 
-          El mismo se disputará en la ciudad de Esquel el día 8 de diciembre.
-        </p>
-        <p>
-          <FaInstagram /> Seguinos en vivo desde{" "}
-          <a 
-            href="https://www.instagram.com/huemuleshcbariloche/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="enlace-instagram"
-          >
-            nuestro Instagram
-          </a>
-        </p>
-        <p className="llamado-accion">
-          ¡¡¡Te esperamos!!!
-        </p>
+      {cargando && <p className="estado-carga">Cargando novedades...</p>}
+      {error && <p className="estado-error">{error}</p>}
+
+      <div className="instagram-feed">
+        {noticias.map((noticia, i) => (
+          <div key={i} className="noticia-embed">
+            {noticia.titulo && <h3 className="noticia-titulo">{noticia.titulo}</h3>}
+            <blockquote
+              className="instagram-media"
+              data-instgrm-permalink={noticia.url}
+              data-instgrm-version="14"
+              style={{ maxWidth: "540px", width: "100%", margin: "0 auto" }}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
