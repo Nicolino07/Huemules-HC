@@ -28,7 +28,7 @@ function agruparPorFecha(partidos) {
 }
 
 export default function Calendario() {
-  const [partidos, setPartidos] = useState({});
+  const [partidosPorFecha, setPartidosPorFecha] = useState({});
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(null);
 
@@ -36,7 +36,7 @@ export default function Calendario() {
     fetch(SHEET_URL)
       .then((res) => res.text())
       .then((texto) => {
-        setPartidos(agruparPorFecha(parsearCSV(texto)));
+        setPartidosPorFecha(agruparPorFecha(parsearCSV(texto)));
         setCargando(false);
       })
       .catch(() => {
@@ -52,19 +52,17 @@ export default function Calendario() {
       {cargando && <p>Cargando fixture...</p>}
       {error && <p>{error}</p>}
 
-      {Object.entries(partidos).map(([fecha, partidos]) => (
+      {Object.entries(partidosPorFecha).map(([fecha, partidos]) => (
         <div key={fecha} className="dia-partidos">
           <h2>{fecha}</h2>
           {partidos.map((p, i) => (
-            <div key={i}>
+            <div key={i} className="partido">
               {p.categoria && <h3>{p.categoria}</h3>}
               <p>{p.equipoLocal} vs {p.equipoVisitante}</p>
               <p>{p.hora} hs</p>
+              {p.ubicacion && <h3 className="ubicacion">{p.ubicacion}</h3>}
             </div>
           ))}
-          {partidos[0]?.ubicacion && (
-            <h3 className="ubicacion">{partidos[0].ubicacion}</h3>
-          )}
         </div>
       ))}
     </div>

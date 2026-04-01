@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaHockeyPuck } from "react-icons/fa";
+import { FaHockeyPuck, FaInstagram } from "react-icons/fa";
 import Papa from "papaparse";
 import "./Noticias.css";
 
@@ -12,6 +12,7 @@ function parsearCSV(texto) {
     .map((fila) => ({
       url: fila["url_post"]?.trim(),
       titulo: fila["titulo"]?.trim(),
+      descripcion: fila["descripcion"]?.trim(),
     }))
     .filter((n) => n.url);
 }
@@ -34,20 +35,6 @@ export default function Noticias() {
       });
   }, []);
 
-  useEffect(() => {
-    if (noticias.length === 0) return;
-    if (!document.getElementById("instagram-embed-script")) {
-      const script = document.createElement("script");
-      script.id = "instagram-embed-script";
-      script.src = "https://www.instagram.com/embed.js";
-      script.async = true;
-      script.onload = () => window.instgrm?.Embeds.process();
-      document.body.appendChild(script);
-    } else if (window.instgrm) {
-      window.instgrm.Embeds.process();
-    }
-  }, [noticias]);
-
   return (
     <section className="novedades">
       <hr className="divider" />
@@ -58,16 +45,19 @@ export default function Noticias() {
       {cargando && <p className="estado-carga">Cargando novedades...</p>}
       {error && <p className="estado-error">{error}</p>}
 
-      <div className="instagram-feed">
+      <div className="noticias-lista">
         {noticias.map((noticia, i) => (
-          <div key={i} className="noticia-embed">
+          <div key={i} className="noticia">
             {noticia.titulo && <h3 className="noticia-titulo">{noticia.titulo}</h3>}
-            <blockquote
-              className="instagram-media"
-              data-instgrm-permalink={noticia.url}
-              data-instgrm-version="14"
-              style={{ maxWidth: "540px", width: "100%", margin: "0 auto" }}
-            />
+            {noticia.descripcion && <p>{noticia.descripcion}</p>}
+            <a
+              href={noticia.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="enlace-instagram"
+            >
+              <FaInstagram /> Ver en Instagram
+            </a>
           </div>
         ))}
       </div>
