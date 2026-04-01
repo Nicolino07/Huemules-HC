@@ -8,12 +8,11 @@ import Navbar from "./components/NavBar";
 import Calendario from "./pages/Calendario";
 import Footer from "./components/Footer";
 import Noticias from "./components/Noticias";
+import FixtureWidget from "./components/FixtureWidget";
 
 import "./App.css";
 
-/*Importar fotos necesarias para la portada */
 import fondo from "./images/Fondos/Bandera Huemules.PNG";
-import portada from "./images/Galeria/img_01.jpg";
 
 
 export default function App() {
@@ -32,20 +31,22 @@ export default function App() {
             <main className="content">
               <section className="hero">
                 <h1>Huemules Hockey Club</h1>
-                <figure className="foto-club">
-                  <img src={portada} alt="Portada" className="portada-img" />
-                  <figcaption className="epigrafe-principal">Huemules Hockey Club, pasión por el hockey</figcaption>
-                </figure>
               </section>
 
-              <section className="novedades">
-
-                <Noticias/>
-
-                <h3>CONSULTANOS!!</h3>
-                <p>Teléfono: 294 467-7439 </p>
-
-              </section>
+              <div className="home-contenido">
+                <div className="home-layout">
+                  <div className="home-noticias">
+                    <Noticias />
+                  </div>
+                  <div className="home-fixture">
+                    <FixtureWidget />
+                  </div>
+                </div>
+                <div className="contacto-home">
+                  <h3>CONSULTANOS!!</h3>
+                  <p>Teléfono: 294 467-7439</p>
+                </div>
+              </div>
 
              
 

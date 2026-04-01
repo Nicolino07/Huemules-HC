@@ -52,7 +52,6 @@ export default function Noticias() {
 
   return (
     <section className="novedades">
-      <hr className="divider" />
       <h2>
         <FaHockeyPuck className="icono-titulo" /> ¡Últimas novedades!
       </h2>
@@ -63,14 +62,12 @@ export default function Noticias() {
       <div className="noticias-lista">
         {noticias.map((noticia) => (
           <div key={noticia.url} className="noticia-embed">
-            {noticia.titulo && <h3 className="noticia-titulo">{noticia.titulo}</h3>}
-            {noticia.descripcion && <p>{noticia.descripcion}</p>}
             <blockquote
               className="instagram-media"
               data-instgrm-captioned
               data-instgrm-permalink={noticia.url}
               data-instgrm-version="14"
-              style={{ minWidth: "unset", width: "100%", margin: "0 auto" }}
+              style={{ minWidth: "unset", width: "100%", maxWidth: "320px", margin: "0 auto" }}
             />
           </div>
         ))}

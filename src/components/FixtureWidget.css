@@ -1,0 +1,67 @@
+.fixture-widget {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 120px;
+  align-self: start;
+  margin-top: 0;
+}
+
+.fixture-titulo {
+  color: #f9fbfd;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0.83em 0 1.5rem 0;
+}
+
+.fw-fecha {
+  margin-bottom: 1.2rem;
+}
+
+.fw-fecha h3 {
+  background-color: #3498db;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.fw-partido {
+  border-left: 3px solid #3498db;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.6rem;
+  background: #f9f9f9;
+  border-radius: 0 5px 5px 0;
+}
+
+.fw-categoria {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #3498db;
+  text-transform: uppercase;
+}
+
+.fw-equipos {
+  margin: 2px 0;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.fw-hora {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.fw-ubicacion {
+  margin: 2px 0;
+  font-size: 0.8rem;
+  color: #718096;
+}
