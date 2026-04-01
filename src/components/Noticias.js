@@ -59,7 +59,6 @@ export default function Noticias() {
 
       {cargando && <p className="estado-carga">Cargando novedades...</p>}
       {error && <p className="estado-error">{error}</p>}
-      {noticias.map((n, i) => <p key={i} style={{fontSize: "10px", wordBreak: "break-all"}}>DEBUG: "{n.url}"</p>)}
 
       <div className="noticias-lista">
         {noticias.map((noticia, i) => (

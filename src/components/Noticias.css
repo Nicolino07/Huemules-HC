@@ -89,14 +89,20 @@
 }
 
 
-.imagen-noticia {
-  margin: 15px 0;
-  text-align: center;
+.noticias-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-.noticia-imagen {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.noticia-embed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noticia-titulo {
+  text-align: center;
 }
