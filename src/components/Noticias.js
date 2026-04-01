@@ -37,15 +37,16 @@ export default function Noticias() {
 
   useEffect(() => {
     if (noticias.length === 0) return;
+    const procesar = () => window.instgrm?.Embeds.process();
     if (!document.getElementById("instagram-embed-script")) {
       const script = document.createElement("script");
       script.id = "instagram-embed-script";
       script.src = "https://www.instagram.com/embed.js";
       script.async = true;
-      script.onload = () => window.instgrm?.Embeds.process();
+      script.onload = procesar;
       document.body.appendChild(script);
-    } else if (window.instgrm) {
-      window.instgrm.Embeds.process();
+    } else {
+      setTimeout(procesar, 300);
     }
   }, [noticias]);
 
