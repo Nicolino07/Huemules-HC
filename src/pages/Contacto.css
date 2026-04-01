@@ -1,46 +1,142 @@
+/* Contacto.css */
+
 .contacto-container {
-  margin-top: 120px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 130px 20px 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eaedf0;
+}
+
+.contacto-container h1 {
   text-align: center;
-  color: blanchedalmond;
-  padding: 0 1rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 12px;
+  margin-bottom: 36px;
+  color: #eaedf0;
 }
 
-@media (max-width: 768px) {
-  .contacto-container {
-    margin-top: 120px;
-  }
-
-  .mapa {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .mapas-container iframe {
-    width: 100%;
-  }
+/* ── Grid de tarjetas ────────────────────────────── */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
-.mapas-container {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+.contacto-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 22px 20px;
+  backdrop-filter: blur(4px);
 }
 
-.mapa {
-  flex: 1 1 300px;
-  max-width: 400px;
+.contacto-card h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3498db;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+/* ── Badge categoría ─────────────────────────────── */
+.categoria-badge {
+  display: inline-block;
+  background: #3498db;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+/* ── Grupos de horario ───────────────────────────── */
+.horario-grupo {
+  margin-bottom: 14px;
+}
+
+.horario-grupo p,
+.contacto-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #c8d0d8;
+  line-height: 1.5;
+}
+
+.ubicacion-texto {
+  color: #aab4c0 !important;
+  font-size: 0.88rem !important;
+}
+
+.nota {
+  margin-top: 12px !important;
+  font-style: italic;
+  color: #aab4c0 !important;
+  font-size: 0.85rem !important;
+}
+
+/* ── Tarjeta de contacto ─────────────────────────── */
+.contacto-info p {
+  font-size: 1rem !important;
+  color: #c8d0d8 !important;
+  margin: 8px 0 !important;
 }
 
 .instagram-link {
-  color: #e1306c; /* color de Instagram */
+  color: #e1306c;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.2s;
 }
 
 .instagram-link:hover {
   color: #ff66a5;
   text-decoration: underline;
+}
+
+/* ── Mapas ───────────────────────────────────────── */
+.mapas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.mapa-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mapa-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #aab4c0;
+  padding: 10px 14px;
+  margin: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.mapa-card iframe {
+  display: block;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 600px) {
+  .contacto-container {
+    padding: 100px 12px 30px 12px;
+  }
+
+  .contacto-container h1 {
+    font-size: 1.6rem;
+  }
 }

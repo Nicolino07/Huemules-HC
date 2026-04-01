@@ -1,96 +1,156 @@
 /* Calendario.css */
 
 .calendario-container {
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 130px 20px 20px 20px;
+  padding: 130px 20px 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  color: #eaedf0;
 }
 
 .calendario-container h1 {
   text-align: center;
   color: #eaedf0;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
   font-size: 2.2rem;
+  letter-spacing: 1px;
   border-bottom: 2px solid #3498db;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
-.calendario-container h2 {
-  background-color: #3498db;
+/* ── Bloque de fecha ─────────────────────────────── */
+.dia-partidos {
+  margin-bottom: 36px;
+}
+
+.dia-partidos h2 {
+  display: inline-block;
+  background: linear-gradient(90deg, #1a6db5, #3498db);
   color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 25px 0 15px;
-  font-size: 1.5rem;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.4);
 }
 
-.calendario-container h3 {
-  color: #2c3e50;
-  margin: 20px 0 10px;
-  font-size: 1.3rem;
+/* ── Match card ──────────────────────────────────── */
+.partido {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  backdrop-filter: blur(4px);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.partido:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.25);
+}
+
+/* Fila superior: badge categoría */
+.partido-header {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-.calendario-container h3::before {
-  content: "•";
+.categoria-badge {
+  background: #3498db;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Fila central: equipos VS */
+.partido-equipos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+
+.equipo {
+  flex: 1;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #eaedf0;
+  line-height: 1.2;
+}
+
+.equipo.visitante {
+  text-align: right;
+}
+
+.equipo.local {
+  text-align: left;
+}
+
+.vs-badge {
+  background: rgba(255, 255, 255, 0.1);
   color: #3498db;
-  font-size: 1.8rem;
-  margin-right: 10px;
-}
-
-.calendario-container p {
-  margin: 8px 0;
-  padding-left: 25px;
-  font-size: 1.1rem;
-}
-
-/* Estilo para los horarios */
-.calendario-container p:nth-of-type(even) {
-  color: #e74c3c;
-  font-weight: bold;
-  margin-bottom: 15px;
-  padding-left: 35px;
-}
-
-/* Estilo para la ubicación */
-
-.calendario-container h3.ubicacion::before {
-  content: "📍";
-  font-size: 1rem;
-  margin-right: 8px;
-}
-
-/* Añade esto al CSS */
-.dia-partidos {
-  background-color: #f9f9f9;
+  font-size: 0.85rem;
+  font-weight: 900;
+  padding: 4px 10px;
   border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 30px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  border-left: 4px solid #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.4);
+  flex-shrink: 0;
 }
 
+/* Fila inferior: hora + ubicación */
+.partido-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.88rem;
+  color: #aab4c0;
+  flex-wrap: wrap;
+}
+
+.partido-hora {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #e74c3c;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.partido-ubicacion {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ── Responsive ──────────────────────────────────── */
 @media (max-width: 600px) {
   .calendario-container {
-    padding: 10px;
+    padding: 100px 12px 30px 12px;
   }
-  
+
   .calendario-container h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
-  
-  .calendario-container h2 {
-    font-size: 1.3rem;
+
+  .equipo {
+    font-size: 0.95rem;
   }
-  
-  .calendario-container h3 {
-    font-size: 1.1rem;
-  }
-  
-  .calendario-container p {
-    font-size: 1rem;
+
+  .partido {
+    padding: 12px 14px;
   }
 }
