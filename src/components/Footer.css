@@ -77,16 +77,37 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  
+
   .paginas-amigas {
     text-align: left;
   }
-  
+
   .paginas-amigas h4 {
     justify-content: flex-start;
   }
-  
+
   .paginas-amigas ul {
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.5rem;
+  }
+
+  .footer-content {
+    gap: 0.5rem;
+  }
+
+  .paginas-amigas h4 {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-info {
+    padding-top: 0.5rem;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
   }
 }

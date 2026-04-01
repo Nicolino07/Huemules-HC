@@ -1,7 +1,7 @@
 /* Noticias.css */
 .novedades {
   padding: 1.5rem 2rem;
-  background-color: #73a9cc; /* Fondo más claro */
+  
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 800px;
@@ -9,7 +9,7 @@
 }
 
 .novedades h2 {
-  color: #2c3e50;
+  color: #f9fbfd;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -90,14 +90,12 @@
 
 
 .noticias-lista {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
 .noticia-embed {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,4 +103,17 @@
 
 .noticia-titulo {
   text-align: center;
+}
+
+/* Forzar que el embed de Instagram no desborde en mobile */
+.noticia-embed iframe,
+.noticia-embed .instagram-media {
+  min-width: unset !important;
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .noticias-lista {
+    grid-template-columns: 1fr;
+  }
 }

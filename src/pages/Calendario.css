@@ -3,14 +3,14 @@
 .calendario-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 130px 20px 20px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
 
 .calendario-container h1 {
   text-align: center;
-  color: #2c3e50;
+  color: #eaedf0;
   margin-bottom: 30px;
   font-size: 2.2rem;
   border-bottom: 2px solid #3498db;

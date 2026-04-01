@@ -61,8 +61,8 @@ export default function Noticias() {
       {error && <p className="estado-error">{error}</p>}
 
       <div className="noticias-lista">
-        {noticias.map((noticia, i) => (
-          <div key={i} className="noticia">
+        {noticias.map((noticia) => (
+          <div key={noticia.url} className="noticia-embed">
             {noticia.titulo && <h3 className="noticia-titulo">{noticia.titulo}</h3>}
             {noticia.descripcion && <p>{noticia.descripcion}</p>}
             <blockquote
@@ -70,7 +70,7 @@ export default function Noticias() {
               data-instgrm-captioned
               data-instgrm-permalink={noticia.url}
               data-instgrm-version="14"
-              style={{ maxWidth: "540px", width: "100%", margin: "0 auto" }}
+              style={{ minWidth: "unset", width: "100%", margin: "0 auto" }}
             />
           </div>
         ))}

@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  margin-top: 110px;
 }
 
 .historia-container p {
@@ -22,6 +23,20 @@
   color: whitesmoke;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .historia-container h1 {
+    font-size: 4rem;
+  }
+
+  .historia-container p {
+    font-size: 1rem;
+  }
+
+  .historia-container h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .historia-container h2 {

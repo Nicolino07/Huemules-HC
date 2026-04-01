@@ -15,6 +15,7 @@
   margin-top: 120px;
   text-align: center;
   color: whitesmoke;
+  padding: 0 1rem;
 }
 
 /* Imagen de fondo fija y oscurecida */
@@ -131,7 +132,24 @@
   font-family: "Petemoss", cursive;
   font-size: 7rem;
   font-style: normal;
+}
 
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 120px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .portada-img {
+    margin-top: 0;
+  }
+
+  .content {
+    padding: 10px;
+  }
 }
 
 
