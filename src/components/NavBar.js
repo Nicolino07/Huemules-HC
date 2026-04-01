@@ -22,7 +22,6 @@ export default function Navbar() {
           <Link to="/galeria" onClick={() => setMenuOpen(false)}>Galería</Link>
           <Link to="/calendario" onClick={() => setMenuOpen(false)}>Calendario</Link>
           <Link to="/contacto" onClick={() => setMenuOpen(false)}>Contacto</Link>
-          
         </div>
       </div>
 
@@ -35,6 +34,14 @@ export default function Navbar() {
           <img src={instagramIcon} alt="Instagram" className="instagram-icon" />
         </a>
 
+        <a
+          href="https://www.instagram.com/huemuleshcbariloche/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-instagram-mobile"
+        >
+          <img src={instagramIcon} alt="Instagram" className="instagram-icon-menu" />
+        </a>
         <div className="hamburger" onClick={toggleMenu}>
           ☰
         </div>

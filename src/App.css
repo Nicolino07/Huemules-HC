@@ -194,19 +194,16 @@
 
 @media (max-width: 768px) {
   .hero {
-    margin-top: 120px;
+    margin-top: 80px;
+    height: calc(50vh - 80px);
   }
 
   .hero h1 {
-    font-size: 5rem;
-  }
-
-  .portada-img {
-    margin-top: 0;
+    font-size: 4rem;
   }
 
   .content {
-    padding: 10px;
+    padding: 0;
   }
 
   .home-layout {
@@ -214,7 +211,7 @@
   }
 
   .home-contenido {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 }
 

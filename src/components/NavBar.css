@@ -63,11 +63,30 @@
   margin-left: 0px;
 }
 
+.nav-instagram-mobile {
+  display: none;
+}
+
+.instagram-icon-menu {
+  width: 28px;
+  height: 28px;
+}
+
 /* Responsive para celulares */
 @media (max-width: 768px) {
+  .topbar {
+    height: 80px;
+    padding: 0 12px;
+  }
+
+  .logo {
+    height: 50px;
+    margin-right: 8px;
+  }
+
   .nav-links {
     position: absolute;
-    top: 110px;
+    top: 80px;
     left: 0;
     width: 100%;
     flex-direction: column;
@@ -80,21 +99,22 @@
   }
 
   .nav-links a {
-    margin: 20px 0;
-    font-size: 1.5rem;
+    margin: 16px 0;
+    font-size: 1.3rem;
   }
 
   .hamburger {
     display: block;
-  }
-
-  .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 16px; /* espacio entre íconos */
+    margin-right: 0;
   }
 
   .instagram-icon {
-    margin: 0;
+    display: none;
+  }
+
+  .nav-instagram-mobile {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
   }
 }
